@@ -39,6 +39,17 @@ button:hover{
     color: var(--light-green-color);
 }
 
+.section-title{
+    color: var(--light-green-color);
+    text-transform: uppercase;
+    padding: 1rem 0px;
+}
+.italic{
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -110,7 +121,7 @@ nav ul{
     width: 50%;
 } */
 .intro{
-    padding: 3rem 20vw;
+    padding: 5rem 20vw;
 } 
 
 .intro .content {
@@ -121,9 +132,26 @@ nav ul{
 .intro .content .text{
     width: 50%;
     flex-shrink: 0;
+    padding-right: 2rem;
+    box-sizing: border-box;
 }
+.intro .content .text h3{
+    color: var(--dark-gray-color);
+    font-size: 2rem;
+}
+.intro .content .text p{
+    color: var(--light-gray-color);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.intro .content .text .h4{
+    color: var(--dark-gray-color);
+    line-height: 2rem;
+}
+
 .intro .content .image-container{
-    width: 50%;
+    width: 60%;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 5px;
@@ -146,3 +174,28 @@ nav ul{
  .intro .content img:hover{
     transform: scale(1.5);
  }
+
+ .intro .skill-list-container {
+    display:  flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+ } 
+
+ .intro .skill-list-container .skill-item {
+    width: 30%;
+   
+    line-height: 1.5rem;
+ }
+ .intro .skill-list-container .skill-item h4{
+    font-size: 1.5rem;
+    color: var(--dark-gray-color);
+
+ }
+ .intro .skill-list-container .skill-item p{
+
+    color: var(--dark-gray-color);
+
+ }
+
